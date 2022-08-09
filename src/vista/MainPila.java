@@ -6,6 +6,7 @@
 package vista;
 
 import datos.Productos;
+import modelo.OperacionesPila;
 import modelo.Pila;
 
 /**
@@ -28,5 +29,9 @@ public class MainPila {
         
         pilaP.desapilar();
         System.out.println("Pila \n"+pilaP.toString());
+        
+        Pila<Productos> pd = OperacionesPila.pilaDuplicada(pilaP);
+            System.out.println("Pila Duplicada \n"+pilaP.toString());
+            
     }           
 }
